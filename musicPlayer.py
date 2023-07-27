@@ -25,7 +25,7 @@ class MusicPlayer:
     scroll_y.config(command=self.playlist.yview)
     scroll_y.pack(side=RIGHT)
     self.playlist.pack(fill=BOTH)
-    os.chdir("X:\\")
+    os.chdir("X:\\Music\\")
     songtracks = os.listdir()
     for track in songtracks:
       self.playlist.insert(END,track)
